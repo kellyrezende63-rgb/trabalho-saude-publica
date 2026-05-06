@@ -7,9 +7,28 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
         header { background: #c53030; color: white; padding: 2rem; text-align: center; border-radius: 8px; margin-bottom: 20px; }
-        h2 { color: #c53030; border-bottom: 2px solid #c53030; padding-bottom: 10px; }
+        h2 { color: #c53030; border-bottom: 2px solid #c53030; padding-bottom: 10px; margin-top: 30px; }
         .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .img-placeholder { width: 100%; height: auto; border-radius: 8px; margin: 15px 0; border: 1px solid #ddd; }
+        
+        /* Estilo das Imagens */
+        figure { margin: 20px auto; text-align: center; }
+        img { 
+            width: 50%; /* Tamanho de 50 conforme solicitado */
+            height: auto; 
+            border-radius: 8px; 
+            border: 1px solid #ddd; 
+            display: block;
+            margin: 0 auto;
+        }
+        
+        /* Estilo das Legendas */
+        figcaption { 
+            font-size: 0.9rem; 
+            color: #666; 
+            margin-top: 10px; 
+            font-style: italic; 
+        }
+
         table { width: 100%; border-collapse: collapse; margin: 20px 0; }
         table, th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
         th { background-color: #f8f8f8; color: #c53030; }
@@ -24,25 +43,33 @@
 </header>
 
 <div class="container">
-    <img src="BANDEIRA.png" alt="BANDEIRA.png" class="img-placeholder">
+    
+    <figure>
+        <img src="BANDEIRA.PNG" alt="Bandeira do Canadá">
+        <figcaption>Bandeira Nacional do Canadá - Símbolo da unidade entre as províncias.</figcaption>
+    </figure>
 
     <h2>1. O Sistema Canadense: Medicare</h2>
-    <p>O sistema de saúde do Canadá é <strong>público e universal</strong>[]. Ao contrário de um sistema centralizado, ele é composto por 13 planos provinciais e territoriais coordenados pela <em>Lei de Saúde do Canadá</em>[].</p>
+    <p>O sistema de saúde do Canadá é público e universal. Ele é composto por planos provinciais coordenados pela Lei de Saúde do Canadá, garantindo que nenhum cidadão seja deixado sem assistência por motivos financeiros.</p>
     
     <div class="highlight">
         <strong>Os 5 Pilares do Medicare:</strong>
         <ul>
-            <li><strong>Administração Pública:</strong> Gestão sem fins lucrativos por autoridade pública[].</li>
-            <li><strong>Integralidade:</strong> Cobertura de todos os serviços clinicamente necessários[].</li>
-            <li><strong>Universalidade:</strong> Acesso uniforme para todos os segurados[].</li>
-            <li><strong>Portabilidade:</strong> Cobertura mantida em viagens dentro do país[].</li>
-            <li><strong>Acessibilidade:</strong> Sem barreiras financeiras ou taxas extras[].</li>
+            <li><strong>Administração Pública:</strong> Sem fins lucrativos.</li>
+            <li><strong>Integralidade:</strong> Cobre todos os serviços necessários.</li>
+            <li><strong>Universalidade:</strong> Acesso igual para todos os residentes.</li>
+            <li><strong>Portabilidade:</strong> Válido em todo o país.</li>
+            <li><strong>Acessibilidade:</strong> Atendimento gratuito no ponto de serviço.</li>
         </ul>
     </div>
 
     <h2>2. Infraestrutura e Atendimento</h2>
-    <p>No Canadá, a maioria dos médicos são profissionais liberais que faturam diretamente para o governo[]. A porta de entrada é o <strong>médico de família</strong>, que encaminha para especialistas quando necessário[].</p>
-    <img src="HOSPITAL.jpeg" alt="HOSPITAL.jpeg" class="img-placeholder">
+    <p>A maioria dos hospitais no Canadá opera de forma eficiente, focando na tecnologia e no atendimento primário através dos médicos de família.</p>
+    
+    <figure>
+        <img src="HOSPITAL.JPEG" alt="Hospital no Canadá">
+        <figcaption>Infraestrutura de um centro hospitalar moderno no território canadense.</figcaption>
+    </figure>
 
     <h2>3. Comparativo de Indicadores</h2>
     <table>
@@ -55,27 +82,29 @@
         <tbody>
             <tr>
                 <td>Expectativa de Vida</td>
-                <td>Aproximadamente 81,6 anos []</td>
+                <td>~ 81,6 anos</td>
             </tr>
             <tr>
                 <td>Investimento em Saúde</td>
-                <td>~11,2% a 12,7% do PIB []</td>
+                <td>~ 12% do PIB</td>
             </tr>
             <tr>
                 <td>Financiamento Público</td>
-                <td>~70% do total gasto []</td>
+                <td>~ 70% do total gasto</td>
             </tr>
         </tbody>
     </table>
 
-    <h2>4. Desafios: O Problema das Filas</h2>
-    <p>Um dos maiores problemas atuais do Medicare é o <strong>tempo de espera</strong> para consultas com especialistas e cirurgias[].</p>
-    <img src="FILA.jpeg" alt="FILA.jpeg" class="img-placeholder">
-    
-    <p>Além disso, o envelhecimento da população e a escassez de médicos em áreas rurais são desafios críticos para o futuro[].</p>
+    <h2>4. Desafios: Filas de Espera</h2>
+    <p>Apesar da alta qualidade, o sistema enfrenta críticas devido ao tempo de espera para cirurgias não urgentes e consultas com especialistas.</p>
+
+    <figure>
+        <img src="FILAS.JPEG" alt="Fila de espera">
+        <figcaption>Representação das filas de espera, um dos principais desafios do sistema público.</figcaption>
+    </figure>
 
     <h2>5. Conclusão</h2>
-    <p>Embora ambos os sistemas (SUS e Medicare) busquem a universalidade, o Canadá se destaca pelo alto investimento per capita, enquanto o Brasil enfrenta desafios maiores de subfinanciamento e gestão de recursos em um território vasto[].</p>
+    <p>O modelo canadense serve de inspiração para muitos países, inclusive para o SUS brasileiro, embora ambos lutem para equilibrar custos crescentes com a demanda da população.</p>
 </div>
 
 </body>
