@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saúde Global: Foco Brasil</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca para Gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -15,84 +17,61 @@
 
 <nav>
     <a href="#inicio">Início</a>
-    <a href="#comparacoes">Indicadores</a>
+    <a href="#indicadores">Gráficos e Indicadores</a>
     <a href="#analise">Análise Crítica</a>
     <a href="#sucessos">Sucessos do Brasil</a>
-    <a href="#equipe">Equipe</a>
 </nav>
 
 <main>
-    <!-- Seção Inicial -->
     <section id="inicio">
         <h2>O Sistema Único de Saúde (SUS)</h2>
-        <p>O Brasil possui um dos maiores sistemas de saúde pública do mundo, regido por princípios constitucionais fundamentais:</p>
-        <ul>
-            <li><strong>Universalidade:</strong> Atendimento garantido a toda a população sem distinção.</li>
-            <li><strong>Integralidade:</strong> Cuidado completo, da prevenção à alta complexidade.</li>
-            <li><strong>Equidade:</strong> Tratar desigualmente os desiguais para reduzir disparidades no acesso.</li>
-        </ul>
+        <p>O SUS é regido pelos princípios de <strong>Universalidade, Integralidade e Equidade</strong> [4]. Abaixo, analisamos os indicadores que mostram como o Brasil se posiciona globalmente.</p>
     </section>
 
-    <!-- Seção de Indicadores -->
-    <section id="comparacoes" class="highlight">
-        <h2>Indicadores Essenciais (Brasil)</h2>
+    <!-- SEÇÃO DE GRÁFICOS -->
+    <section id="indicadores" class="highlight">
+        <h2>Indicadores de Saúde: Brasil vs. Mundo</h2>
+        <p>Dados comparativos baseados em fontes como OMS e Banco Mundial [5].</p>
+        
         <div class="grid-container">
-            <div class="card">
-                <h3>Expectativa de Vida</h3>
-                <p>Reflete o saneamento, alimentação e desigualdade social no país.</p>
+            <div class="chart-card">
+                <h3>Expectativa de Vida (Anos)</h3>
+                <canvas id="chartExpectativa"></canvas>
+                <p><small>O Brasil busca alcançar índices de países desenvolvidos [6].</small></p>
             </div>
-            <div class="card">
-                <h3>Mortalidade Infantil</h3>
-                <p>Indicador sensível à qualidade da atenção básica e vacinação.</p>
+            
+            <div class="chart-card">
+                <h3>Médicos por 1.000 Hab.</h3>
+                <canvas id="chartMedicos"></canvas>
+                <p><small>Cuba destaca-se pela alta densidade de profissionais [7].</small></p>
             </div>
-            <div class="card">
-                <h3>Investimento (% PIB)</h3>
-                <p>Análise de como o país investe seus recursos em saúde pública.</p>
+
+            <div class="chart-card">
+                <h3>Mortalidade Infantil (por 1k)</h3>
+                <canvas id="chartMortalidade"></canvas>
+                <p><small>Indicador sensível à atenção básica e vacinação [6].</small></p>
             </div>
-            <div class="card">
-                <h3>Médicos por Habitante</h3>
-                <p>Foco na distribuição geográfica desses profissionais pelo território.</p>
+
+            <div class="chart-card">
+                <h3>Investimento em Saúde (% PIB)</h3>
+                <canvas id="chartPIB"></canvas>
+                <p><small>Volume de recurso vs. eficiência do modelo [8].</small></p>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Sucessos -->
     <section id="sucessos">
         <h2>O que o Brasil Ensina ao Mundo</h2>
-        <p>Apesar dos desafios, o Brasil é referência global em áreas estratégicas:</p>
         <div class="success-box">
-            <h4>PNI (Programa Nacional de Imunizações)</h4>
-            <p>Criado em 1973, é um dos mais eficazes do mundo, servindo de modelo para logística em regiões remotas.</p>
+            <h4>PNI e Estratégia Saúde da Família</h4>
+            <p>O PNI é referência global em logística, enquanto a ESF inspira modelos de prevenção internacionalmente [9, 10].</p>
         </div>
-        <div class="success-box">
-            <h4>Combate ao HIV/AIDS</h4>
-            <p>Pioneirismo em 1996 ao garantir acesso universal e gratuito a medicamentos antirretrovirais.</p>
-        </div>
-        <div class="success-box">
-            <h4>Estratégia de Saúde da Família (ESF)</h4>
-            <p>Com mais de 40 mil equipes, leva prevenção às comunidades vulneráveis e inspira modelos internacionais.</p>
-        </div>
-        <div class="success-box">
-            <h4>Transplantes de Órgãos</h4>
-            <p>Um dos maiores e mais organizados sistemas públicos de transplantes do mundo.</p>
-        </div>
-    </section>
-
-    <!-- Análise Crítica -->
-    <section id="analise" class="highlight">
-        <h2>Análise Crítica e Aprendizado</h2>
-        <p>O Brasil enfrenta desafios crônicos de financiamento e desigualdades regionais. Para evoluir, pode aprender com outros modelos:</p>
-        <ul>
-            <li><strong>Reino Unido:</strong> Fortalecimento do médico de família como pilar.</li>
-            <li><strong>Alemanha:</strong> Integração regulada entre o setor público e privado.</li>
-            <li><strong>Tailândia:</strong> Eficiência na cobertura universal com orçamentos limitados.</li>
-        </ul>
     </section>
 </main>
 
+<script src="script.js"></script>
 <footer>
     <p>&copy; 2024 - Projeto Interdisciplinar de Saúde Global</p>
 </footer>
-
 </body>
 </html>
