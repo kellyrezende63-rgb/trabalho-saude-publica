@@ -3,75 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saúde Global: Foco Brasil</title>
+    <title>Análise SUS - Brasil no Cenário Global</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Biblioteca para Gráficos -->
+    <!-- Biblioteca de Gráficos -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
 <header>
-    <h1>Análise do Sistema de Saúde Brasileiro</h1>
-    <p>Projeto Interdisciplinar: Investigando o SUS no Cenário Global</p>
+    <h1>O Sistema Único de Saúde (SUS)</h1>
+    <p>Uma Análise Crítica e Comparativa Internacional</p>
 </header>
 
 <nav>
     <a href="#inicio">Início</a>
-    <a href="#indicadores">Gráficos e Indicadores</a>
-    <a href="#analise">Análise Crítica</a>
+    <a href="#indicadores">Indicadores</a>
     <a href="#sucessos">Sucessos do Brasil</a>
+    <a href="#analise">Análise Crítica</a>
 </nav>
 
 <main>
     <section id="inicio">
-        <h2>O Sistema Único de Saúde (SUS)</h2>
-        <p>O SUS é regido pelos princípios de <strong>Universalidade, Integralidade e Equidade</strong> [4]. Abaixo, analisamos os indicadores que mostram como o Brasil se posiciona globalmente.</p>
+        <h2>Princípios Constitucionais</h2>
+        <p>O Brasil é referência por seu modelo baseado em três pilares fundamentais [3]:</p>
+        <div class="principios">
+            <div class="card-p"><strong>Universalidade:</strong> Saúde como direito de todos.</div>
+            <div class="card-p"><strong>Integralidade:</strong> Cuidado completo em todos os níveis.</div>
+            <div class="card-p"><strong>Equidade:</strong> Justiça social no atendimento.</div>
+        </div>
     </section>
 
-    <!-- SEÇÃO DE GRÁFICOS -->
     <section id="indicadores" class="highlight">
-        <h2>Indicadores de Saúde: Brasil vs. Mundo</h2>
-        <p>Dados comparativos baseados em fontes como OMS e Banco Mundial [5].</p>
-        
-        <div class="grid-container">
-            <div class="chart-card">
-                <h3>Expectativa de Vida (Anos)</h3>
-                <canvas id="chartExpectativa"></canvas>
-                <p><small>O Brasil busca alcançar índices de países desenvolvidos [6].</small></p>
-            </div>
-            
-            <div class="chart-card">
+        <h2>Comparação de Indicadores Globais</h2>
+        <p>Dados que comprovam que investimento alto nem sempre garante os melhores resultados [6].</p>
+        <div class="grid-graficos">
+            <div class="chart-container">
                 <h3>Médicos por 1.000 Hab.</h3>
                 <canvas id="chartMedicos"></canvas>
-                <p><small>Cuba destaca-se pela alta densidade de profissionais [7].</small></p>
             </div>
-
-            <div class="chart-card">
+            <div class="chart-container">
                 <h3>Mortalidade Infantil (por 1k)</h3>
                 <canvas id="chartMortalidade"></canvas>
-                <p><small>Indicador sensível à atenção básica e vacinação [6].</small></p>
-            </div>
-
-            <div class="chart-card">
-                <h3>Investimento em Saúde (% PIB)</h3>
-                <canvas id="chartPIB"></canvas>
-                <p><small>Volume de recurso vs. eficiência do modelo [8].</small></p>
             </div>
         </div>
     </section>
 
     <section id="sucessos">
         <h2>O que o Brasil Ensina ao Mundo</h2>
-        <div class="success-box">
-            <h4>PNI e Estratégia Saúde da Família</h4>
-            <p>O PNI é referência global em logística, enquanto a ESF inspira modelos de prevenção internacionalmente [9, 10].</p>
-        </div>
+        <p>O SUS possui conquistas que servem de modelo internacional [7, 8]:</p>
+        <ul>
+            <li><strong>PNI:</strong> Referência global em logística e cobertura vacinal [4].</li>
+            <li><strong>HIV/AIDS:</strong> Pioneirismo no acesso universal gratuito a antirretrovirais [4].</li>
+            <li><strong>Saúde da Família:</strong> O maior programa de atenção primária do mundo [5].</li>
+            <li><strong>Transplantes:</strong> Um dos sistemas mais organizados e volumosos do planeta [8].</li>
+        </ul>
     </section>
 </main>
 
-<script src="script.js"></script>
 <footer>
-    <p>&copy; 2024 - Projeto Interdisciplinar de Saúde Global</p>
+    <p>&copy; 2024 Projeto Interdisciplinar - Saúde Global</p>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
