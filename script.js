@@ -1,24 +1,24 @@
-// Gráfico 1: Médicos por Habitante (Ref: Cuba vs Brasil vs EUA)
+// Gráfico de Médicos por 1.000 Hab.
 new Chart(document.getElementById('chartMedicos'), {
     type: 'bar',
     data: {
         labels: ['Brasil', 'Cuba', 'EUA'],
         datasets: [{
-            label: 'Médicos por 1.000 habitantes',
-            data: [2.3, 8.4, 2.6], // Cuba é referência em densidade [6]
+            label: 'Médicos/1.000 hab.',
+            data: [2.3, 8.4, 2.6],
             backgroundColor: ['#009c3b', '#ffdf00', '#002776']
         }]
     }
 });
 
-// Gráfico 2: Mortalidade Infantil (Ref: Sensibilidade do sistema)
+// Gráfico de Mortalidade Infantil
 new Chart(document.getElementById('chartMortalidade'), {
     type: 'bar',
     data: {
         labels: ['Brasil', 'Cuba', 'EUA'],
         datasets: [{
-            label: 'Mortes por 1.000 nascidos vivos',
-            data: [13, 4.5, 5.4], // Cuba tem indicadores comparáveis a países ricos [6]
+            label: 'Mortes/1.000 nascidos',
+            data: [13, 4.5, 5.4],
             backgroundColor: ['#009c3b', '#ffdf00', '#002776']
         }]
     }
